@@ -14,7 +14,7 @@
 <body>
     <h1>Login page!</h1>
 
-    <form action="<c:url value = "/servlet/login"/>" method = "post">
+    <form action="<c:url value = "/servlet/login"/>" method = "post">   <!-- post method -->
         <div class="container">
             <label for="login"><b>Username</b></label>
             <input id="login" type="text" placeholder="Enter Username" name="username" required>
@@ -25,6 +25,7 @@
             <button type="submit">Login</button>
         </div>
     </form>
+    /* After the form is sent, POST request is done because the form is designed so. */
 
 </body>
 </html>
