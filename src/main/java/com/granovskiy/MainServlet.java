@@ -27,13 +27,13 @@ public class MainServlet extends HttpServlet {
         } else if(req.getRequestURI().equals("/servlet/login") && req.getMethod().equals("POST")) {
             String username = req.getParameter("username");
             String password = req.getParameter("password");
-            req.setAttribute("username", username);
+            req.setAttribute("username", username);  //  the attribute is set to the request
             name = "welcome";
         } else {
             name = "404";
         }
         /* using format, file address is formed.  File address and String name are sent further with dispatcher
-          going to: /WEB-INF/views/login.jsp file   */
+          for example: /WEB-INF/views/login.jsp   or  /WEB-INF/views/welcome.jsp    */
         req.getRequestDispatcher(String.format("/WEB-INF/views/%s.jsp", name)).forward(req, resp);
         /*  the first time it sends you to login page
           the second time it sends you to welcome page or to 404 page  */

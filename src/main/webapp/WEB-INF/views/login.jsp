@@ -25,7 +25,7 @@
             <button type="submit">Login</button>
         </div>
     </form>
-    /* After the form is sent, POST request is done because the form is designed so. */
+    <%-- After the form is sent, POST request is done because the form is designed so. --%>
 
 </body>
 </html>
