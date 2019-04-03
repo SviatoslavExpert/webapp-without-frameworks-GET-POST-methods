@@ -50,21 +50,7 @@ Part II
 5. JSP file: welcome.jsp.
     - Generates an html page with a greeting. Welcome page opens for user.
     
-    
-    Notes:
-    
-    java.lang.String getParameter(java.lang.String name)
-    Returns the value of a request parameter as a String, or null if the parameter does not exist. 
-    Request parameters are extra information sent with the request. 
-    For HTTP servlets, parameters are contained in the query string or posted form data.
-    https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html#getParameter(java.lang.String)
-    
-    method:  void setAttribute(java.lang.String name,java.lang.Object o)
-    Stores an attribute in this request. Attributes are reset between requests. This method is most often used in conjunction 
-    with  RequestDispatcher.
-    https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html
-    
-    
+            
 RequestDispatcher in Servlet
 
 The RequestDispatcher interface provides the facility of dispatching the request
@@ -82,4 +68,20 @@ Forwards a request from a servlet to another resource (servlet, JSP file, or HTM
 public void include(ServletRequest request,ServletResponse response)throws ServletException,
 java.io.IOException:
 Includes the content of a resource (servlet, JSP page, or HTML file) in the response.
+    
+    
+    Notes:
+    
+    java.lang.String getParameter(java.lang.String name)
+    Returns the value of a request parameter as a String, or null if the parameter does not exist. 
+    Request parameters are extra information sent with the request. 
+    For HTTP servlets, parameters are contained in the query string or posted form data.
+    https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html#getParameter(java.lang.String)
+    
+    method:  void setAttribute(java.lang.String name,java.lang.Object o)
+    Stores an attribute in this request. Attributes are reset between requests. This method is most often used in conjunction 
+    with  RequestDispatcher.
+    https://docs.oracle.com/javaee/6/api/javax/servlet/ServletRequest.html
+    
+
    
